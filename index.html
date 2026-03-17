@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Salami Card 2026 | হাঁস পাখি</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="salami-card" id="capture-card">
+            <div class="card-header">
+                <h1>ডিজিটাল সালামি বক্স ২০২৬</h1>
+            </div>
+            
+            <div class="avatar-container">
+                <img src="duck-avatar.png" alt="Duck Avatar" class="duck-img">
+            </div>
+            
+            <div class="main-quote">
+                "বড় হওয়া মানেই কি শুধু সালামি দেওয়া? একদম না! ছোটদের অধিকার আদায়ে আমি সবসময় সোচ্চার। পকেটের ভার কমাতে এবং কিপটেমি দূর করতে নিচের ফর্মটি পূরণ করে আপনার বড় মনের পরিচয় দিন। মনে রাখবেন—সালামি দিলে সওয়াব হয়, আর বেশি দিলে বেশি সওয়াব!"
+            </div>
+
+            <div class="display-data">
+                <p>প্রাপক: <span id="res-name">আপনার নাম</span></p>
+                <p>পাওনা সালামি: <span id="res-amount">৳ ০.০০</span></p>
+            </div>
+
+            <div class="footer-credit">
+                ডিজাইন ও পরিকল্পনা: <span>হাঁস পাখি</span>
+            </div>
+        </div>
+
+        <div class="form-box">
+            <div class="input-item">
+                <label>আপনার নাম লিখুন</label>
+                <input type="text" id="userName" placeholder="যেমন: রহিম আহমেদ">
+            </div>
+            <div class="input-item">
+                <label>সালামির পরিমাণ</label>
+                <input type="number" id="userAmount" placeholder="যেমন: ৫০০০">
+            </div>
+            
+            <div class="btn-group">
+                <button class="btn-main" onclick="updateAndCelebrate()">সালামি রিকোয়েস্ট তৈরি করুন</button>
+                <button class="btn-dl" id="downloadBtn" style="display:none;" onclick="downloadCard()">কার্ডটি ডাউনলোড করুন 📥</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
